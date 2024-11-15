@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Energy Monitor Dashboard</h1>
+        <div class="readings">
+            <div class="reading-card">
+                <h3>Voltage</h3>
+                <div id="voltage">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Current</h3>
+                <div id="current">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Power</h3>
+                <div id="power">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Energy</h3>
+                <div id="energy">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Frequency</h3>
+                <div id="frequency">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Power Factor</h3>
+                <div id="pf">--</div>
+            </div>
+            <div class="reading-card">
+                <h3>Carbon Footprint</h3>
+                <div id="carbon">--</div>
+                <small>Based on Thailand's emission rate</small>
+            </div>
+        </div>
+        
+        <!-- Add charts section -->
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="voltageChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="powerChart"></canvas>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="download-report" class="btn">Download Carbon Report</button>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
